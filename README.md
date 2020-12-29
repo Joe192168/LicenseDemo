@@ -47,21 +47,24 @@ keytool -import -alias "publicCert" -file "certfile.cer" -keystore "publicCerts.
 	"privateAlias": "privateKey",
 	"keyPass": "private_password1234",
 	"storePass": "public_password1234",
-	"licensePath": "C:/Users/zifangsky/Desktop/license_demo/license.lic",
-	"privateKeysStorePath": "C:/Users/zifangsky/Desktop/license_demo/privateKeys.keystore",
-	"issuedTime": "2018-07-10 00:00:01",
-	"expiryTime": "2019-12-31 23:59:59",
+	"licensePath": "D:/license.lic",
+	"privateKeysStorePath": "D:/privateKeys.keystore",
+	"issuedTime": "2020-07-10 00:00:01",
+	"expiryTime": "2021-12-31 23:59:59",
 	"consumerType": "User",
 	"consumerAmount": 1,
 	"description": "这是证书描述信息",
 	"licenseCheckModel": {
-		"ipAddress": ["192.168.245.1", "10.0.5.22"],
-		"macAddress": ["00-50-56-C0-00-01", "50-7B-9D-F9-18-41"],
-		"cpuSerial": "BFEBFBFF000406E3",
-		"mainBoardSerial": "L1HF65E00X9"
+		"ipAddress": ["192.168.0.43", "192.168.154.1", "192.168.136.1"],
+		"macAddress": ["94-C6-91-BD-BF-93", "00-50-56-C0-00-01", "00-50-56-C0-00-08"],
+		"cpuSerial": "BFEBFBFF000906EA",
+		"mainBoardSerial": ""
 	}
 }
 ```
+
+(4)验证客户端登陆 POST请求
+http://localhost:7080/check?username=admin&password=123
 
 ![生成证书](https://www.zifangsky.cn/wp-content/uploads/2018/07/20180710141528.png)
 
