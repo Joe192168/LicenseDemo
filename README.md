@@ -1,6 +1,4 @@
 # LicenseDemo
-=======
-# LicenseDemo
 
 #### 项目介绍
 在基于Spring的项目中使用 `TrueLicense `生成和验证`License证书`（服务器许可）的示例代码
